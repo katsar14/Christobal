@@ -1,0 +1,31 @@
+.audio-block {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 40px;
+    background-color: rgba($color: $accent, $alpha: 0.3)
+}
+
+.audio-block__body {
+    flex-grow: 1;
+    padding: 0 40px;
+}
+
+.audio-block__title {
+    display: block;
+    font-size: 20px;
+    color: $white;
+    padding-top: 5px;
+    margin-bottom: 8px;
+}
+
+.audio-block__thumb {
+    width: 148px;
+    height: 148px;
+    overflow: hidden;
+
+    img {
+        width: 148px;
+        height: 148px;
+        object-fit: cover;
+    }
+}

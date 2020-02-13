@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Christobal</title>
+    <link href="https://fonts.googleapis.com/css?family=Vast+Shadow|Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-header__container container">
+            <a href="index.html" class="page-header__logo">Christobal</a>
+            <nav class="page-header__nav main-nav">
+                <ul class="main-nav__site-nav site-nav">
+                    <li class="site-nav__item"><a href="index.html" class="site-nav__link">Home</a></li>
+                    <li class="site-nav__item"><a href="index.html" class="site-nav__link">About me</a></li>
+                    <li class="site-nav__item"><a href="index.html" class="site-nav__link">My music</a></li>
+                    <li class="site-nav__item"><a href="index.html" class="site-nav__link">Photos</a></li>
+                    <li class="site-nav__item"><a href="index.html" class="site-nav__link">Blog</a></li>
+                </ul>
+                <div class="main-nav__socials socials">
+                    <p class="socials__title">Follow me:</p>
+                    <ul class="socials__list">
+                        <li>
+                            <a class="socials__link" href="#" aria-label="Facebook">
+                                <svg width="20" height="23">
+                                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="socials__link" href="#" aria-label="Instagram">
+                                <svg width="25" height="22">
+                                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="socials__link" href="#" aria-label="Youtube">
+                                <svg width="25" height="22">
+                                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__container container">
+                <h1 class="hero__title">Christobal</h1>
+                <h2 class="hero__subtitle">Musician, songwriter, singer</h2>
+                <div class="hero__btn-block">
+                    <button class="hero__btn btn btn--outline" type="button">About me</button>
+                    <button class="hero__btn btn" type="button">My music</button>
+                </div>
+                <div class="hero__audio-field audio-block">
+                    <div class="audio-block__thumb">
+                        <img src="img/photo1.jpeg" width="148" height="148" alt="thumbnail">
+                    </div>
+                    <div class="audio-block__body">
+                        <span class="audio-block__title">Song 1</span>
+                        <div class="audio-block__audioplayer audioplayer js-audioplayer">
+                            <audio class="visually-hidden" preload="auto" controls="">
+                                <source src="audio/Song-1.mp4">
+                            </audio>
+                            <button class="audioplayer__play-pause" aria-label="play/pause"
+                                data-action="playpause"></button>
+                            <div class="audioplayer__progress-bar" data-action="progress">
+                                <div class="audioplayer__progress-value js-progress"></div>
+                            </div>
+                            <span class="js-duration" role="timer" aria-label="duration">00:00</span>
+                            <button class="audioplayer__mute" type="button" data-action="mute" aria-label="mute/unmute"></button>
+                            <div class="audioplayer__volume-bar" data-action="volume">
+                                <div class="audioplayer__volume-value js-volume"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section">
+            <div class="about__container container">
+                <div class="about__img">
+                    <picture>
+                        <img class="about__img" src="img/photo1.jpeg" width="300" alt="Photo of Christobal">
+                    </picture>
+                </div>
+                <div class="about__text">
+                    <h2 class="about__title section__title">About me</h2>
+                    <p class="section__lead">Hello! I'm Christobal. Welcome to my site!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatum perspiciatis quae,
+                        ipsa eaque
+                        voluptatibus possimus doloremque recusandae voluptas laboriosam impedit non velit, animi nulla
+                        aut labore
+                        corrupti delectus quam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                        deserunt
+                        laudantium pariatur praesentium error quo nemo unde eius facere. Laudantium minima libero modi
+                        possimus
+                        totam? Animi autem nemo provident saepe!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta labore recusandae tempore beatae
+                        neque
+                        quaerat adipisci fugit. Error excepturi illo quis quod modi, in placeat soluta sunt nesciunt
+                        minima iste.
+                    </p>
+                    <div class="about__socials socials">
+                        <span class="socials__title">Follow me:</span>
+                        <ul class="socials__list">
+                            <li>
+                                <a class="socials__link" href="#" aria-label="Facebook">
+                                    <svg width="20" height="23">
+                                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="socials__link" href="#" aria-label="Instagram">
+                                    <svg width="25" height="22">
+                                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="socials__link" href="#" aria-label="Youtube">
+                                    <svg width="25" height="22">
+                                        <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
