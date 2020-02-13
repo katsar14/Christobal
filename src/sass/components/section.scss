@@ -1,0 +1,36 @@
+.section {
+  padding: 150px 0;
+
+  p {
+    margin: 0 0 15px;
+    font-size: 16px;
+  }
+
+  .section__lead {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+
+}
+
+.section__title {
+  display: inline-block;
+  position: relative;
+  padding: 0 30px;
+  margin: 0 0 30px;
+  font-size: 48px;
+  color: $black;
+
+  &::before {
+    @include centerV;
+    top: 59%;
+    left: 0;
+    content: '';
+    z-index: -1;
+    height: 3px;
+    width: 100%;
+    background-color: $accent;
+  }
+}
+
+

@@ -1,0 +1,93 @@
+.audioplayer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba($c-bg, 0.5);
+}
+
+.audioplayer__progress-bar {
+    min-width: 50%;
+    flex-grow: 1;
+    margin-right: 10px;
+    height: 6px;
+    background-color: #323232;
+    cursor: pointer;
+}
+
+.audioplayer__duration {
+    margin-right: 40px;
+    font-size: 14px;
+    color: #424242;
+}
+
+.audioplayer__progress-value {
+    width: 0;
+    height: 6px;
+    background-color: $primary;
+}
+
+.audioplayer__play-pause {
+    @include btn-reset;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    margin-right: 40px;
+    background: url("../img/play.svg") no-repeat 53% 50%;
+    background-size: 38%;
+    background-color: rgba(#252525, 0.6);
+    transition: background-color 0.25s;
+
+    .playing & {
+        background-image: url("../img/pause.svg");
+    }
+
+    &:hover {
+        background-color: lighten($color: #252525, $amount: 6)
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 1px 1px rgba($color: $primary, $alpha: 0.5);
+    }
+}
+
+.audioplayer__mute {
+    @include btn-reset;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 40px;
+    background: url("../img/volume-up.svg") no-repeat 50% 50%;
+    background-size: 80%;
+    transition: opacity 0.25s;
+
+    .muted & {
+        background-image: url("../img/volume-off.svg");
+        background-size: 39%;
+        background-position: 20% 50%;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 1px 1px rgba($color: $primary, $alpha: 0.5);
+    }
+}
+
+.audioplayer__volume-bar {
+    width: 100px;
+    height: 5px;
+    margin-right: 40px;
+    background-color: rgba($color: $white, $alpha: 0.9);
+    cursor: pointer;
+}
+
+.audioplayer__volume-value {
+    width: 100px;
+    height: 5px;
+    background-color: $primary;
+}

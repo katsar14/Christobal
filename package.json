@@ -1,0 +1,46 @@
+{
+  "name": "christobal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katsar14/Christobal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katsar14/Christobal/issues"
+  },
+  "homepage": "https://github.com/katsar14/Christobal#readme",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-svgstore": "^7.0.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-stream": "^5.2.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ]
+}

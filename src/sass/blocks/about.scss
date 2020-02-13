@@ -1,0 +1,46 @@
+.about__container {
+  display: flex;
+  align-items: center;
+
+   > *   {
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+
+.about__text {
+  padding-right: 40px;
+}
+
+.about__img {
+  display: flex;
+  justify-content: center;
+
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 340px;
+    height: 533px;
+    object-fit: cover;
+  }
+
+  picture {
+    position: relative;
+  }
+
+  picture::before {
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    left: -30px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 4px solid $accent;
+    border-radius: 5px;
+  }
+}
+
+.about__socials {
+  margin-top: 25px;
+}

@@ -1,0 +1,91 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 670px;
+    padding-top: 84px;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, rgba($black, 0.1) 15%, rgba($black, 0.15) 50%, rgba($black, 0.2)),
+            linear-gradient(rgba($primary, 0.6), rgba($primary, 0.3)), url("../../img/flame-guitar.jpg") center;
+        filter: blur(3px);
+    }
+
+    // &::after {
+    //   position: absolute;
+    //   content: "";
+    //   bottom: 0;
+    //   left: 0;
+    //   background: url("../../img/brushbg.png") bottom no-repeat;
+    //   height: 280px;
+    //   bottom: 0;
+    //   width: 100%;
+    // }
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hero__title {
+    margin-top: 10vh;
+    font-family: $font-alt;
+    font-size: 8rem;
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero__subtitle {
+    margin-top: 6vh;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: $white;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        bottom: 3px;
+        height: 1px;
+        width: 50%;
+        background: white;
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            #f60038 14%,
+            #f60038 85%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        top: 2px;
+    }
+}
+
+.hero__btn-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    margin-bottom: 20px;
+}
+
+.hero__btn {
+    margin: 0 14px;
+}
