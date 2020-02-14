@@ -1,0 +1,16 @@
+.page-footer {
+    background-color: #1a1a1a;
+    padding: 60px 0;
+}
+
+.page-footer__copyright {
+    text-align: center;
+}
+
+.page-footer__socials {
+    justify-content: center;
+
+    .socials__link {
+        border-color: #1a1a1a;
+    }
+}

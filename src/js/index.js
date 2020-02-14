@@ -1,4 +1,3 @@
-import { Audioplayer } from './app/audioplayer/audioplayer'
+import app from './app/app';
 
-const audioplayer = new Audioplayer(document.querySelector('.js-audioplayer'));
-audioplayer.init();
+app();

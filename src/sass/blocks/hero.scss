@@ -14,7 +14,7 @@
         right: 0;
         bottom: 0;
         background: linear-gradient(to right, rgba($black, 0.1) 15%, rgba($black, 0.15) 50%, rgba($black, 0.2)),
-            linear-gradient(rgba($primary, 0.6), rgba($primary, 0.3)), url("../../img/flame-guitar.jpg") center;
+            linear-gradient(rgba($primary, 0.6), rgba($primary, 0.3)), url("../img/flame-guitar.jpg") center;
         filter: blur(3px);
     }
 
@@ -88,4 +88,13 @@
 
 .hero__btn {
     margin: 0 14px;
+}
+
+
+.hero__audio-field {
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }

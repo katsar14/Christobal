@@ -1,20 +1,24 @@
 .audio-block {
     display: flex;
-    margin-top: auto;
-    margin-bottom: 40px;
-    background-color: rgba($color: $accent, $alpha: 0.3)
+    background-color: rgba($color: $accent, $alpha: 0.3);
+
+    & + & {
+        margin-top: 20px;
+    }
 }
 
 .audio-block__body {
     flex-grow: 1;
-    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px 20px;
 }
 
 .audio-block__title {
     display: block;
     font-size: 20px;
     color: $white;
-    padding-top: 5px;
     margin-bottom: 8px;
 }
 

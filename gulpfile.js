@@ -54,7 +54,8 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
     return gulp.src([
-        "src/audio/**/*"
+        "src/audio/**/*",
+        "src/fonts/**/*.{woff,woff2}"
     ], {
         base: "src"
     })
