@@ -9,7 +9,7 @@
 }
 
 .about__text {
-  padding-right: 40px;
+  padding-right: 100px;
 }
 
 .about__img {
@@ -36,7 +36,7 @@
     content: '';
     width: 100%;
     height: 100%;
-    border: 4px solid $accent;
+    border: 6px solid rgba($accent, 0.8);
     border-radius: 5px;
   }
 }

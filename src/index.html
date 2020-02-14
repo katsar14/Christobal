@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>Christobal</title>
-    <link href="https://fonts.googleapis.com/css?family=Vast+Shadow|Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="page-header">
+    <header class="page-header js-header">
         <div class="page-header__container container">
             <a href="index.html" class="page-header__logo">Christobal</a>
             <nav class="page-header__nav main-nav">
@@ -58,8 +57,8 @@
                 <h1 class="hero__title">Christobal</h1>
                 <h2 class="hero__subtitle">Musician, songwriter, singer</h2>
                 <div class="hero__btn-block">
-                    <button class="hero__btn btn btn--outline" type="button">About me</button>
-                    <button class="hero__btn btn" type="button">My music</button>
+                    <a href="#about" class="hero__btn btn btn--outline js-smooth-scroll">About me</a>
+                    <a href="#music" class="hero__btn btn js-smooth-scroll">My music</a>
                 </div>
                 <div class="hero__audio-field audio-block">
                     <div class="audio-block__thumb">
@@ -77,7 +76,8 @@
                                 <div class="audioplayer__progress-value js-progress"></div>
                             </div>
                             <span class="js-duration" role="timer" aria-label="duration">00:00</span>
-                            <button class="audioplayer__mute" type="button" data-action="mute" aria-label="mute/unmute"></button>
+                            <button class="audioplayer__mute" type="button" data-action="mute"
+                                aria-label="mute/unmute"></button>
                             <div class="audioplayer__volume-bar" data-action="volume">
                                 <div class="audioplayer__volume-value js-volume"></div>
                             </div>
@@ -87,7 +87,7 @@
             </div>
         </section>
 
-        <section class="about section">
+        <section class="about section" id="about">
             <div class="about__container container">
                 <div class="about__img">
                     <picture>
@@ -95,7 +95,7 @@
                     </picture>
                 </div>
                 <div class="about__text">
-                    <h2 class="about__title section__title">About me</h2>
+                    <h2 class="about__title section__title"><span>About me</span></h2>
                     <p class="section__lead">Hello! I'm Christobal. Welcome to my site!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatum perspiciatis quae,
                         ipsa eaque
@@ -141,11 +141,154 @@
             </div>
 
         </section>
+        <section class="music section" id="music">
+            <div class="music__container container">
+                <h2 class="music__title section__title section__title--center"><span>My music</span></h2>
+                <div class="music__audio-container">
+                    <div class="music__audio-block audio-block">
+                        <div class="audio-block__thumb">
+                            <img src="img/photo-9.jpeg" width="148" height="148" alt="thumbnail">
+                        </div>
+                        <div class="audio-block__body">
+                            <span class="audio-block__title">Song 2</span>
+                            <div class="audio-block__audioplayer audioplayer js-audioplayer">
+                                <audio class="visually-hidden" preload="auto" controls="">
+                                    <source src="audio/Song-2.mp4">
+                                </audio>
+                                <button class="audioplayer__play-pause" aria-label="play/pause"
+                                    data-action="playpause"></button>
+                                <div class="audioplayer__progress-bar" data-action="progress">
+                                    <div class="audioplayer__progress-value js-progress"></div>
+                                </div>
+                                <span class="js-duration" role="timer" aria-label="duration">00:00</span>
+                                <button class="audioplayer__mute" type="button" data-action="mute"
+                                    aria-label="mute/unmute"></button>
+                                <div class="audioplayer__volume-bar" data-action="volume">
+                                    <div class="audioplayer__volume-value js-volume"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music__audio-block audio-block">
+                        <div class="audio-block__thumb">
+                            <img src="img/photo-10.jpeg" width="148" height="148" alt="thumbnail">
+                        </div>
+                        <div class="audio-block__body">
+                            <span class="audio-block__title">Song 3</span>
+                            <div class="audio-block__audioplayer audioplayer js-audioplayer">
+                                <audio class="visually-hidden" preload="auto" controls="">
+                                    <source src="audio/Song-3.mp4">
+                                </audio>
+                                <button class="audioplayer__play-pause" aria-label="play/pause"
+                                    data-action="playpause"></button>
+                                <div class="audioplayer__progress-bar" data-action="progress">
+                                    <div class="audioplayer__progress-value js-progress"></div>
+                                </div>
+                                <span class="js-duration" role="timer" aria-label="duration">00:00</span>
+                                <button class="audioplayer__mute" type="button" data-action="mute"
+                                    aria-label="mute/unmute"></button>
+                                <div class="audioplayer__volume-bar" data-action="volume">
+                                    <div class="audioplayer__volume-value js-volume"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music__audio-block audio-block">
+                        <div class="audio-block__thumb">
+                            <img src="img/photo-3.jpeg" width="148" height="148" alt="thumbnail">
+                        </div>
+                        <div class="audio-block__body">
+                            <span class="audio-block__title">Song 4</span>
+                            <div class="audio-block__audioplayer audioplayer js-audioplayer">
+                                <audio class="visually-hidden" preload="auto" controls="">
+                                    <source src="audio/Song-4.mp4">
+                                </audio>
+                                <button class="audioplayer__play-pause" aria-label="play/pause"
+                                    data-action="playpause"></button>
+                                <div class="audioplayer__progress-bar" data-action="progress">
+                                    <div class="audioplayer__progress-value js-progress"></div>
+                                </div>
+                                <span class="js-duration" role="timer" aria-label="duration">00:00</span>
+                                <button class="audioplayer__mute" type="button" data-action="mute"
+                                    aria-label="mute/unmute"></button>
+                                <div class="audioplayer__volume-bar" data-action="volume">
+                                    <div class="audioplayer__volume-value js-volume"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="music__btn btn btn--outline" type="button">Go to all music</button>
+            </div>
+        </section>
+
+        <section class="photos section section--last">
+            <div class="photos__container container">
+                <h2 class="photos__title section__title section__title--center"><span>My photos</span></h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/photo1.jpeg" alt="Photo of Christobal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/photo-3.jpeg" alt="Photo of Christobal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/photo-5.jpeg" alt="Photo of Christobal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/photo-6.jpeg" alt="Photo of Christobal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/photo-7.jpeg" alt="Photo of Christobal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/photo-8.jpeg" alt="Photo of Christobal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/photo-9.jpeg" alt="Photo of Christobal">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/photo-10.jpeg" alt="Photo of Christobal">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <footer class="page-footer">
-
+        <div class="page-footer__container container">
+            <p class="page-footer__copyright">© Copyright 2020. All Rights Reserved.</p>
+            <div class="page-footer__socials socials">
+                <ul class="socials__list">
+                    <li>
+                        <a class="socials__link" href="#" aria-label="Facebook">
+                            <svg width="20" height="23">
+                                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="socials__link" href="#" aria-label="Instagram">
+                            <svg width="25" height="22">
+                                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="socials__link" href="#" aria-label="Youtube">
+                            <svg width="25" height="22">
+                                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>

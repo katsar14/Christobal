@@ -28,12 +28,13 @@ export class Audioplayer {
     _play() {
         this.audio.play();
         this.state = 'playing';
-        this.audio.addEventListener('ended', this._onAudioEnd.bind(this));
+        this.playerElement.classList.add('playing');
     }
 
     _pause() {
         this.audio.pause();
         this.state = 'paused';
+        this.playerElement.classList.remove('playing');
     }
 
     _mute() {
@@ -57,10 +58,8 @@ export class Audioplayer {
     _onStateChange() {
         if (this.state === 'paused') {
             this._play();
-            this.playerElement.classList.add('playing');
         } else if (this.state === 'playing') {
             this._pause();
-            this.playerElement.classList.remove('playing');
         }
     }
 
@@ -100,11 +99,16 @@ export class Audioplayer {
         this.audio.muted ? this.volume.style.width = '0' : this.volume.style.width = vol * 100 + '%';
     }
 
+    onPlay(callback) {
+        this.audio.addEventListener('playing', callback.bind(this));
+    }
+
     _addListeners() {
         this.playerElement.addEventListener('click', this._onClick.bind(this));
         this.audio.addEventListener('timeupdate', this._onTimeUpdate.bind(this));
         this.audio.addEventListener('volumechange', this._onVolumeUpdate.bind(this));
         this.audio.addEventListener('loadeddata', this._onLoad.bind(this));
+        this.audio.addEventListener('ended', this._onAudioEnd.bind(this));
     };
 
     init() {

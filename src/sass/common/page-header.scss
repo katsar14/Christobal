@@ -1,24 +1,62 @@
 .page-header {
-  background-color: transparent;
-  color: $white;
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
+    background-color: transparent;
+    color: $white;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &.fixed {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #1a1a1a;
+        transform: translateY(-100px);
+        animation: move-down .3s forwards;
+    }
+
+    &.move-up {
+        animation: move-up .2s forwards;
+    }
 }
 
 .page-header__container {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid lighten($color: $primary, $amount: 2);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lighten($color: $primary, $amount: 2);
+
+    .fixed & {
+        border-bottom: none;
+    }
 }
 
 .page-header__logo {
-  // font-family: $font-alt;
-  font-size: 1.8rem;
-  letter-spacing: 1px;
-  // text-transform: uppercase;
-  color: inherit;
-  font-weight: 700;
+    position: relative;
+    padding-left: 38px;
+    // font-family: $font-alt;
+    font-size: 1.7rem;
+    letter-spacing: 0.8px;
+    // text-transform: uppercase;
+    color: inherit;
+    font-weight: 700;
+    background: linear-gradient(90deg, $accent, $primary);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    text-decoration-color: $accent!important;
+    vertical-align: middle;
+
+    &::before {
+        content: '';
+        @include centerV;
+        top: 45%;
+        left: 0;
+        width: 35px;
+        height: 35px;
+        background: url('../img/guitar.svg') center no-repeat;
+        background-size: contain;
+    }
 }

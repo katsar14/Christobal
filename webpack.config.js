@@ -10,6 +10,7 @@ module.exports = {
         path: path.resolve(__dirname, 'build/js')
     },
     devtool: 'source-map',
+    mode: 'none',
     module: {
         rules: [
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
